@@ -21,18 +21,12 @@ struct ContentView: View {
                     Text("Git Learning App")
                 }
                 
-//              `  NavigationLink {
-//                    DetailView()
-//                } label: {
-//                    Text("Git Learning App")
-//                }`
-
                 Button {
                     showSheet = true
                 } label: {
-                     Text("Show Details")
+                    Text("Show Details")
                 }
-        }
+            }
             .padding()
             .sheet(isPresented: $showSheet) {
                 DetailView()
